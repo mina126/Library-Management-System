@@ -80,9 +80,7 @@ class Library:
             for book in available_books:
                 print(book)
 
-    def __str__(self):
-        # قم بكتابة التفاصيل الخاصة بك هنا
-        pass
+
 
 
 if __name__ == "__main__":
@@ -90,30 +88,24 @@ if __name__ == "__main__":
     book2 = Book("Data Structures", "Jane Smith")
     book3 = Book("Machine Learning", "Alan Turing")
 
-    # إنشاء المكتبة
+   
     library = Library()
 
-    # إضافة الكتب للمكتبة
+   
     library.add_book(book1)
     library.add_book(book2)
     library.add_book(book3)
 
-    # # عرض الكتب المتاحة
-    # print("Available Books:")
-    # library.show_available_books()
 
-    # استعارة كتاب
-    library.search_book("Python Programming")
-
-    # # محاولة استعارة كتاب آخر
+    library.search_book("Python Prog
     # library.borrow_book("Data Structures")
 
-    # # محاولة استعارة كتاب غير متاح
+
     # library.borrow_book("Python Programming")
 
-    # # إرجاع كتاب
+
     # library.return_book("Python Programming")
 
-    # # عرض الكتب المتاحة بعد الإرجاع
+
     # print("\nAvailable Books After Returning 'Python Programming':")
     # library.show_available_books()
